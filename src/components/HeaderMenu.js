@@ -5,6 +5,7 @@ import '../css/animate.css'
 import '../css/responsive.css'
 import 'font-awesome/css/font-awesome.min.css'
 import '../css/style.css'
+import {Link} from "react-scroll";
 
 class HeaderMenu extends Component {
 
@@ -42,12 +43,67 @@ class HeaderMenu extends Component {
                 </div>
                 <div className="add-margin"></div>
                 <ul className="navmenu-nav">
-                    <li><a href="#home" className="page-scroll">Home</a></li>
-                    <li><a href="#meet-us" className="page-scroll">Overview</a></li>
-                    <li><a href="#services" className="page-scroll">Services</a></li>
-                    <li><a href="#works" className="page-scroll">Portfolio</a></li>
-                    <li><a href="#about-us" className="page-scroll">About Us</a></li>
-                    <li><a href="#contact" className="page-scroll">Contact Us</a></li>
+                    <li>
+                        <Link className="down-btn page-scroll" href="#"
+                              activeClass="active"
+                              to="home"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration={500}
+                        >Home</Link>
+                    </li>
+                    <li>
+                        <Link className="down-btn page-scroll" href="#"
+                              activeClass="active"
+                              to="meet-us"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration={500}
+                        >About Me</Link>
+                    </li>
+                    <li>
+                        <Link className="down-btn page-scroll" href="#"
+                              activeClass="active"
+                              to="services"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration={500}
+                        >Skills</Link>
+                    </li>
+                    <li>
+                        <Link className="down-btn page-scroll" href="#"
+                              activeClass="active"
+                              to="works"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration={500}
+                        >Portfolio</Link>
+                    </li>
+                    <li>
+                        <Link className="down-btn page-scroll" href="#"
+                              activeClass="active"
+                              to="about-us"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration={500}
+                        >About Us</Link>
+                    </li>
+                    <li>
+                        <Link className="down-btn page-scroll" href="#"
+                              activeClass="active"
+                              to="contact"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration={500}
+                        >Contact Us</Link>
+
+                    </li>
                 </ul>
             </div>
         )

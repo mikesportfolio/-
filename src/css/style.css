@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,70);
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
 
 body, html {
     -webkit-font-smoothing: antialiased !important;
@@ -304,12 +305,17 @@ a.down-btn span.fa.fa-angle-down {
 }
 
 .service {
-    border: 1px solid #222;
+    border: 1px solid #f3ebeb;
     margin-top: 20px;
     margin-bottom: 0px;
     transition: all 0.3s;
     position: relative;
     padding: 60px 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 25px;
+
+
 }
 
 .service:hover > h4,
@@ -696,4 +702,32 @@ span.charSpan {
     font-size: 25px;
     font-weight: bolder;
 
+}
+
+span#phrase {
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+span#head-title {
+    font-family: Montserrat;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: rgba(255, 255, 255, 0) !important;
+    box-shadow: none !important;
+    display: grid !important;
+
+}
+
+.progress-bar-percent {
+    color: #4cae4c;
+    font-family: 'Cardo', serif !important;
+}
+
+.react-sweet-progress-symbol {
+    font-family: 'Cardo', serif;
+    color: #4cae4c !important;
 }

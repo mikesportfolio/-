@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import Typed from "react-typed";
 import HeaderMenu from "./HeaderMenu";
 import {properties} from './Properties/VariableComponent'
-
+import {Link} from "react-scroll";
 
 class HomeComponent extends Component {
 
@@ -19,7 +19,6 @@ class HomeComponent extends Component {
         this.setState((prevState) => {
             return {menu: true}
         });
-        console.log("header component current state " + this.state.menu)
     }
 
     handleMainPageTitleColor = (text) => {
@@ -42,6 +41,13 @@ class HomeComponent extends Component {
         console.log(this.spanRef.current);
     }
 
+    handleClosingSideBar = (e) => {
+        this.setState((prevState) => {
+            return {menu: false}
+        });
+        console.log("Hello Wworld")
+    }
+
     render() {
         const show = (this.state.menu) ? "show" : "";
         return (
@@ -53,11 +59,12 @@ class HomeComponent extends Component {
                             </span>
                         </nav>
 
-                        <div className="content">
-                            <h4><span id="phrase" ref={this.spanRef}> hello </span></h4>
-                            <hr/>
-                            <div className="header-text btn">
-                                <h1>
+                        <div onClick={this.handleClosingSideBar}>
+                            <div className="content">
+                                <h4><span id="phrase" ref={this.spanRef}> hello </span></h4>
+                                <hr/>
+                                <div className="header-text btn">
+                                    <h1>
                             <span id="head-title">
                              <Typed
                                  strings={["I make applications^1000",
@@ -69,13 +76,22 @@ class HomeComponent extends Component {
                                  startDelay={100}
                              />
                         </span>
-                                </h1>
+                                    </h1>
+                                </div>
                             </div>
-                        </div>
 
-                        <a href="#meet-us" className="down-btn page-scroll">
-                            <span className="fa fa-angle-down"></span>
-                        </a>
+
+                            <Link className="down-btn page-scroll"
+                                  activeClass="active"
+                                  to="meet-us"
+                                  spy={true}
+                                  smooth={true}
+                                  offset={-70}
+                                  duration={500}
+                            >
+                                <div className="col-12"><span className="fa fa-angle-down"></span></div>
+                            </Link>
+                        </div>
                     </div>
                 </div>
                 <HeaderMenu showValue={this.state.menu}/>

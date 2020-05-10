@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import 'bootstrap/dist/css/bootstrap.css';
+import  './css/bootstrap.min.css'
 import 'font-awesome/css/font-awesome.min.css'
 import './css/animate.css'
 import './css/responsive.css'
 import './css/jasny-bootstrap.min.css'
 import './css/style.css'
+
 
 ReactDOM.render(
     <React.StrictMode>

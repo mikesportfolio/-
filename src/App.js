@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import './App.css';
 import HeadComponent from './components/HomeComponent';
+import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
+import Portfolio from "./components/Portfolio";
 
 class App extends Component {
 
@@ -16,6 +19,9 @@ class App extends Component {
         return (
             < div className="App">
                 <HeadComponent manipulateState={this.manipulateState}/>
+                <AboutMe/>
+                <Skills/>
+                <Portfolio/>
             </div>
         )
             ;
