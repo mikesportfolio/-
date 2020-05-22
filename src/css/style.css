@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,70);
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Philosopher&display=swap');
 
 body, html {
     -webkit-font-smoothing: antialiased !important;
@@ -612,7 +613,7 @@ address {
 
 #contact .form-control {
     display: block;
-    width: 100%;
+    width: 600px;
     height: 40px;
     padding: 7px 12px;
     font-size: 14px;
@@ -730,4 +731,75 @@ span#head-title {
 .react-sweet-progress-symbol {
     font-family: 'Cardo', serif;
     color: #4cae4c !important;
+}
+
+.carousel .slide img {
+    height: 500px;
+}
+
+.carouselImg {
+    height: 500px;
+}
+
+.carousel-inner {
+    border-radius: 25px;
+}
+
+.project-caption {
+    border: dot-dash;
+    border-radius: 25px;
+    background-color: rgba(140, 251, 0, 0.46);
+    cursor: pointer;
+
+}
+
+.project-caption-header {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+}
+
+.project-caption-subheader {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+
+.project-properties-text {
+    font-family: 'Cardo', serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #1E2429;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: larger;
+}
+
+.innerText {
+
+    font-family: 'Montserrat', sans-serif;
+    text-align: -webkit-center;
+}
+
+.extraSmallText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-small;
+}
+
+.btnReform {
+    text-transform: uppercase;
+    background: #c59a6d;
+    color: #282f35;
+    padding: 15px 35px;
+    border-radius: 0;
+    font-size: 12px;
+    color: #ffffff;
+    transition: all 0.5s;
 }

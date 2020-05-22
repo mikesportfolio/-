@@ -74,6 +74,10 @@ class HeaderMenu extends Component {
                         >Skills</Link>
                     </li>
                     <li>
+                        <a href="https://drive.google.com/open?id=1yzVlL7DRQWhtp0OcnZWuodeirMhPr3fT" target="_blank">Resumé
+                        </a>
+                    </li>
+                    <li>
                         <Link className="down-btn page-scroll" href="#"
                               activeClass="active"
                               to="works"
@@ -91,7 +95,7 @@ class HeaderMenu extends Component {
                               smooth={true}
                               offset={-70}
                               duration={500}
-                        >About Us</Link>
+                        >Experiences</Link>
                     </li>
                     <li>
                         <Link className="down-btn page-scroll" href="#"
@@ -101,7 +105,7 @@ class HeaderMenu extends Component {
                               smooth={true}
                               offset={-70}
                               duration={500}
-                        >Contact Us</Link>
+                        >Contact Me</Link>
 
                     </li>
                 </ul>

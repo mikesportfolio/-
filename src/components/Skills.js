@@ -23,6 +23,8 @@ import javascriptIco from '../img/skills/javascriptimage_Tq4_icon.ico'
 import htmlCssIco from '../img/skills/htmlcssimg_9Wf_icon.ico'
 import typescriptIco from '../img/skills/typescriptimg_HSp_icon.ico'
 import sqlIco from '../img/skills/sqlimg_O45_icon.ico'
+import {Link} from "react-scroll";
+
 
 const Skills = () => {
 
@@ -33,13 +35,15 @@ const Skills = () => {
             <div id="services">
                 <div className="container">
                     <div className="row text-center">
-                        <div className="col-md-8 col-md-offset-2">
+                        <div className="col-md">
                             <div className="section-title">
-                                <h2>Stacks and languages</h2>
+                                <h2 className="section-title">Stacks and languages</h2>
                                 <hr/>
                             </div>
-                            <p>The following are few of the technology stacks i have worked with and feel very
-                                comfortable using, but not limited to</p>
+                            <p className="innerText">The following are few of the technology stacks
+                                i have worked with
+                                and feel very
+                                comfortable using, but not limited to:</p>
                         </div>
                     </div>
 
@@ -147,7 +151,7 @@ const Skills = () => {
                                 <div className="col-1">
                                     <img src={excelVB} className="innerspace" alt="Excel Visual Basic"/>
                                 </div>
-                                <span className="col-xs-1 col-md-8"><h4
+                                <span className="col-xs-1 col-md-8 text-left"><h4
                                     className="text-left fa innerspace">Excel & Visual Basic</h4></span>
 
                             </div>
@@ -177,7 +181,7 @@ const Skills = () => {
 
                         <div className="col-md-2"></div>
 
-                        <div className="col-md-5 service shadow">
+                        <div className="col-md-4 service shadow">
 
                             <div className="row">
                                 <div className="col-1">
@@ -214,7 +218,7 @@ const Skills = () => {
                                 <div className="col-1">
                                     <img src={htmlCssIco} className="innerspace" alt="Html Css Boostrap"/>
                                 </div>
-                                <span className="col-xs-1 col-md-10"><h4
+                                <span className="col-xs-1 col-md-10 text-left"><h4
                                     className="text-left fa innerspace">HTML & css & bootstrap</h4></span>
 
                             </div>
@@ -818,9 +822,16 @@ const Skills = () => {
 
 
                     </div>
-                    <a href="#works" className="down-btn page-scroll">
-                        <span className="fa fa-angle-down"></span>
-                    </a>
+
+                    <Link className="down-btn page-scroll" href="#"
+                          activeClass="active"
+                          to="works"
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}
+                    > <span className="fa fa-angle-down"/> </Link>
+
                 </div>
             </div>
             < /div>

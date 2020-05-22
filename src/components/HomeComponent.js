@@ -45,7 +45,6 @@ class HomeComponent extends Component {
         this.setState((prevState) => {
             return {menu: false}
         });
-        console.log("Hello Wworld")
     }
 
     render() {
@@ -89,7 +88,7 @@ class HomeComponent extends Component {
                                   offset={-70}
                                   duration={500}
                             >
-                                <div className="col-12"><span className="fa fa-angle-down"></span></div>
+                                <div className="col-12"><span className="fa fa-angle-down "></span></div>
                             </Link>
                         </div>
                     </div>
