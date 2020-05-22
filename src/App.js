@@ -8,9 +8,14 @@ import Experiences from "./components/Experiences";
 import Resume from "./components/Resume";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
+import ReactGa from 'react-ga';
 
 class App extends Component {
 
+initAnalytics = ()=>{
+    ReactGa.initialize("UA-117514705-1")
+    ReactGa.pageview('/')
+}
     state = {
         menu: false
     };
@@ -20,6 +25,7 @@ class App extends Component {
     }
 
     render() {
+        this.initAnalytics();
         return (
             < div className="App">
                 <HeadComponent manipulateState={this.manipulateState}/>
