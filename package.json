@@ -1,5 +1,5 @@
 {
-  "homepage": "http://mikesportfolio.github.io",
+  "homepage": "http://mikesportfolio.github.io/",
   "name": "react-profile-page",
   "version": "0.1.0",
   "private": true,
@@ -36,7 +36,7 @@
     "typed": "^0.3.3"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
