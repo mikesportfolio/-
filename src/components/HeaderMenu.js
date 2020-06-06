@@ -74,7 +74,7 @@ class HeaderMenu extends Component {
                         >Skills</Link>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/open?id=1yzVlL7DRQWhtp0OcnZWuodeirMhPr3fT" target="_blank">Resumé
+                        <a href="https://drive.google.com/file/d/1-JexZEs5v-J8pTOCAiNSRlLIRG1FE1yq/view?usp=sharing" target="_blank">Resumé
                         </a>
                     </li>
                     <li>
