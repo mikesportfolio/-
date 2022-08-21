@@ -22,6 +22,36 @@ const Experiences = () => {
                             <div className="row">
                                 <div className="col-md-4 col-sm-4">
                                     <div className="team">
+                                        <h4>Principal DevOps Consultant</h4>
+                                        <p className="small"> NDA </p>
+                                        <p className="small"><i> Jan 2022 - Present </i></p>
+                                        <p className="small"><i> US </i></p>
+
+                                        <hr/>
+                                    </div>
+                                </div>
+                                <div className="col-md-4 col-sm-4">
+                                    <div className="team">
+                                        <h4>Senior DevOps|Sys Admin|L3 Support</h4>
+                                        <p className="small"> Swintt Gaming </p>
+                                        <p className="small"><i> Sep 2021 - Dec 2021 </i></p>
+                                        <p className="small"><i> Malta</i></p>
+
+                                        <hr/>
+                                    </div>
+                                </div>
+                                <div className="col-md-4 col-sm-4">
+                                    <div className="team">
+                                        <h4>DevOps Developer</h4>
+                                        <p className="small"> EPG Financials LTD</p>
+                                        <p className="small"><i> Sep 2020 - Sep 2021</i></p>
+                                        <p className="small"><i> Malta</i></p>
+
+                                        <hr/>
+                                    </div>
+                                </div>
+                                <div className="col-md-4 col-sm-4">
+                                    <div className="team">
                                         <h4>Megabyte Limted</h4>
                                         <p className="small"> Java Software Developer</p>
                                         <p className="small"><i> Nov 2019 - Present</i></p>
